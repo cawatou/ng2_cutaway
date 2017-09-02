@@ -113,47 +113,10 @@
 				<p>&copy; Copyright notice here  </a></p>
 			</div>
 		</div>
-		<script type="text/javascript" src="/js/jquery.min.js"></script>
-		<script type="text/javascript" src="/js/jquery.lightbox-0.5.pack.js"></script>
-		<script type="text/javascript" src="/js/cufon-yui.js"></script>
-		<script type="text/javascript" src="/js/Desyrel_400.font.js"></script>
 
-		<!-- Cufon text replacement -->
-		<script type="text/javascript">
-			$(document).ready(function(){
-				Cufon.replace('#about .right ul li');
-				Cufon.replace('h2', { textShadow: '0 2px rgba(0, 0, 0, 0.15)' });
-				Cufon.replace('#social .right a', {hover:true});
-				Cufon.replace('#work .left h3', {hover:true});
-				Cufon.replace('h3', { textShadow: '0 2px rgba(0, 0, 0, 0.15)' });
-				Cufon.replace('#contactinfo'), {hover:true};
-			});
-		</script>
-
-		<!-- jQuery lightbox -->
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('#work .right a').lightBox();
-			});
-		</script>
-
-		<!-- Navigation and Content effects -->
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('.page').hide();
-				$('#navigation li:first').addClass('active').show();
-				$('.page:first').show();
-
-				$('#navigation li').click(function(){
-					$('#navigation li').removeClass('active');
-					$(this).addClass('active');
-
-					$('.page').hide();
-					var activeTab = $(this).find('a').attr('href');
-					$(activeTab).fadeIn('slow');
-					return false;
-				});
-			});
-		</script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lightbox-0.5.pack.js"></script>
+		<script type="text/javascript" src="js/cufon-yui.js"></script>
+		<script type="text/javascript" src="js/Desyrel_400.font.js"></script>
 	</body>
 </html>

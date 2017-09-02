@@ -5,11 +5,14 @@ import { HttpModule }    from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+
 import { AppComponent }         from './app.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { IndexComponent } from './index.component';
 import { WorkComponent } from './work.component';
+
+import { ScriptService }   from './script.service';
 
 @NgModule({
   imports: [
@@ -25,7 +28,7 @@ import { WorkComponent } from './work.component';
     IndexComponent,
     WorkComponent
   ],
-  providers: [ ],
+  providers: [ ScriptService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
