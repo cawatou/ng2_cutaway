@@ -1,9 +1,8 @@
-
 <div id="header">
   <ul id="navigation">
-    <li><a class="about" href="/"><img src="images/icon-about.png" alt="About"></a></li>
-    <li><a class="work" href="/work">work</a></li>
-    <li><a class="social" href="/social"><img src="images/icon-social.png" alt="Social"></a></li>
-    <li><a class="contact" href="/contact"><img src="images/icon-contact.png" alt="Contact"></a></li>
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a class="about" routerLink="/"><img src="images/icon-about.png" alt="About"></a></li>
+    <li routerLinkActive="active"><a class="work" routerLink="/work">work</a></li>
+    <li routerLinkActive="active"><a class="social" routerLink="/social"><img src="images/icon-social.png" alt="Social"></a></li>
+    <li routerLinkActive="active"><a class="contact" routerLink="/contact"><img src="images/icon-contact.png" alt="Contact"></a></li>
   </ul>
 </div>
