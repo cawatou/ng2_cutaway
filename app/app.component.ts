@@ -1,9 +1,9 @@
 import {Component}          from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    template: `<h1>{{title}}</h1>`,
+    selector: 'app',
+    templateUrl: './html/app.component.html',
 })
 export class AppComponent {
-    title = 'TELEDOM MASTER';
+    //title = 'TELEDOM MASTER';
 }
